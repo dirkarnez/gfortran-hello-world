@@ -9,4 +9,6 @@ SET PATH=^
 %DOWNLOADS_DIR%\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64-9.0.0-r1\mingw64;^
 %DOWNLOADS_DIR%\winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64-9.0.0-r1\mingw64\bin;
 
-gfortran helloworld.f90 -o helloworld
+gfortran --version &&^
+gfortran -static hello.f90 -o hello  &&^
+pause
